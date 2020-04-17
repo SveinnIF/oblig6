@@ -1,6 +1,3 @@
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
-
 public class Observation {
     private String observerName,picture,comments,timeObserved;
     private int amountObserved;

@@ -1,14 +1,6 @@
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args){
-
 
         HashMap<String,Observation> observationList = new HashMap<>();
         HashMap<String, Kush> kushList = new HashMap<>();
@@ -25,20 +17,9 @@ public class Main {
                 false,2,4,1,2, "sometype","scalecollecion","bent",true,2));
         observationList.put("untarianObservation",new Observation("Svon", untariansList.get("GOMP"),biomeList.get("taterLand"),"pictureURL","24.3.2337",1,"it was eating"));
         System.out.println(observationList.get("untarianObservation"));
-        skrivTilJson("observationCatalog",observationList);
 
+        new AnimalRepository(observationList,kushList, septansList, untariansList,  biomeList,"observationCatalog");
+    //jeg velger map for å ha dataene mine i fordi da slipper en del metoder som resultat av List. Med HashMap kan jeg bare skrive .get(nøkkelen) siden alt har en Id her uansett. det er base det beste valget synes jeg
     }
 
-
-
-    public static void skrivTilJson(String filnavn, HashMap<String, Observation> observationHashMap) {
-        try {
-            File file = new File(filnavn);
-            ObjectMapper objectMapper = new ObjectMapper();
-
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, observationHashMap);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }

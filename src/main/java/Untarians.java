@@ -1,7 +1,3 @@
-import com.fasterxml.jackson.annotation.JsonValue;
-
-import java.util.ArrayList;
-import java.util.Comparator;
 public class Untarians extends Animal{
     private int amountOfOrifices,observedSocialInteligence;
     private String toolUse,graspingAbility;

@@ -1,5 +1,3 @@
-import com.fasterxml.jackson.annotation.JsonValue;
-
 public class Kush extends Animal{
     private boolean mobile;
     private String diet,walkingSpeed, formOfAcidGland,venomType;
@@ -67,7 +65,6 @@ public class Kush extends Animal{
     }
 
     @Override
-    @JsonValue
     public String toString() {
         String mode;
         String mobility;

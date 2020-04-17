@@ -1,5 +1,3 @@
-import com.fasterxml.jackson.annotation.JsonValue;
-
 public class Septans extends Animal{
     private String exoskeletonType,wingType,antennaType;
     private boolean wings;
@@ -58,7 +56,6 @@ public class Septans extends Animal{
     }
 
     @Override
-    @JsonValue
     public String toString() {
         String mode;
         String mobility;
