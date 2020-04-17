@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.annotation.JsonValue;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 public class Untarians extends Animal{
@@ -12,11 +14,43 @@ public class Untarians extends Animal{
         this.graspingAbility = graspingAbility;
     }
 
-/*    public String mostOrifices(ArrayList<Untarians> untarians){
+    public int getAmountOfOrifices() {
+        return amountOfOrifices;
+    }
+
+    public void setAmountOfOrifices(int amountOfOrifices) {
+        this.amountOfOrifices = amountOfOrifices;
+    }
+
+    public int getObservedSocialInteligence() {
+        return observedSocialInteligence;
+    }
+
+    public void setObservedSocialInteligence(int observedSocialInteligence) {
+        this.observedSocialInteligence = observedSocialInteligence;
+    }
+
+    public String getToolUse() {
+        return toolUse;
+    }
+
+    public void setToolUse(String toolUse) {
+        this.toolUse = toolUse;
+    }
+
+    public String getGraspingAbility() {
+        return graspingAbility;
+    }
+
+    public void setGraspingAbility(String graspingAbility) {
+        this.graspingAbility = graspingAbility;
+    }
+    /*    public String mostOrifices(ArrayList<Untarians> untarians){
         return untarians.sort(Comparator.comparing(Untarians::mostOrifices));
     }*/
 
     @Override
+    @JsonValue
     public String toString() {
         String mode;
         if(isCanFly()){

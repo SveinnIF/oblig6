@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public class Septans extends Animal{
     private String exoskeletonType,wingType,antennaType;
     private boolean wings;
@@ -12,7 +14,48 @@ public class Septans extends Animal{
         this.estimatedWingspan = estimatedWingspan;
     }
 
+    public String getExoskeletonType() {
+        return exoskeletonType;
+    }
+
+    public void setExoskeletonType(String exoskeletonType) {
+        this.exoskeletonType = exoskeletonType;
+    }
+
+    public String getWingType() {
+        return wingType;
+    }
+
+    public void setWingType(String wingType) {
+        this.wingType = wingType;
+    }
+
+    public String getAntennaType() {
+        return antennaType;
+    }
+
+    public void setAntennaType(String antennaType) {
+        this.antennaType = antennaType;
+    }
+
+    public boolean isWings() {
+        return wings;
+    }
+
+    public void setWings(boolean wings) {
+        this.wings = wings;
+    }
+
+    public float getEstimatedWingspan() {
+        return estimatedWingspan;
+    }
+
+    public void setEstimatedWingspan(float estimatedWingspan) {
+        this.estimatedWingspan = estimatedWingspan;
+    }
+
     @Override
+    @JsonValue
     public String toString() {
         String mode;
         String mobility;
@@ -29,6 +72,7 @@ public class Septans extends Animal{
             mobility = " it does not have wings.";
         }
         return getId() + " the " + getName() + " (" + getScienceName() + "). it is " + getColour() + " ." + mode + "it has " +  getAmountOfEyes() + " eyes and " +  getAmountOflegs() +
-                " legs. it has a height of " + getHeight() + " meter and a length of " + getLength() + " meter. " + mobility + ". The type is exoskeleton it has is: " + exoskeletonType + " and the antenna are: " + antennaType + ". ";
+                " legs. it has a height of " + getHeight() + " meter and a length of " + getLength() + " meter. " + mobility + ". The type is exoskeleton it has is: " + exoskeletonType +
+                " and the antenna are: " + antennaType + ". ";
     }
 }

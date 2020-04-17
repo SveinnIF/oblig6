@@ -1,12 +1,15 @@
-import java.util.ArrayList;
 import java.util.HashMap;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.sun.org.apache.xml.internal.serializer.Serializer;
 
 public class Main {
     public static void main(String[] args){
 
+
         HashMap<String,Observation> observationList = new HashMap<>();
         HashMap<String, Kush> kushList = new HashMap<>();
         HashMap<String, Septans> septansList = new HashMap<>();
+        @JsonSerialize(keyUsing = Serializer.class)
         HashMap<String,Untarians> untariansList =  new HashMap<>();
         HashMap<String,Biome> biomeList = new HashMap<>();
 
@@ -19,5 +22,7 @@ public class Main {
                 false,2,4,1,2, "sometype","scalecollecion","bent",true,2));
         observationList.put("untarianObservation",new Observation("Svon", untariansList.get("GOMP"),biomeList.get("taterLand"),"pictureURL","24.3.2337",1,"it was eating"));
         System.out.println(observationList.get("untarianObservation"));
+        String jsonResult = mapper.writerWithDefaultPrettyPrinter()
+                .writeValueAsString(map);
     }
 }

@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public class Kush extends Animal{
     private boolean mobile;
     private String diet,walkingSpeed, formOfAcidGland,venomType;
@@ -13,7 +15,56 @@ public class Kush extends Animal{
         this.amountOfSporeSacks = amountOfSporeSacks;
     }
 
+    public boolean isMobile() {
+        return mobile;
+    }
+
+    public void setMobile(boolean mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getDiet() {
+        return diet;
+    }
+
+    public void setDiet(String diet) {
+        this.diet = diet;
+    }
+
+    public String getWalkingSpeed() {
+        return walkingSpeed;
+    }
+
+    public void setWalkingSpeed(String walkingSpeed) {
+        this.walkingSpeed = walkingSpeed;
+    }
+
+    public String getFormOfAcidGland() {
+        return formOfAcidGland;
+    }
+
+    public void setFormOfAcidGland(String formOfAcidGland) {
+        this.formOfAcidGland = formOfAcidGland;
+    }
+
+    public String getVenomType() {
+        return venomType;
+    }
+
+    public void setVenomType(String venomType) {
+        this.venomType = venomType;
+    }
+
+    public int getAmountOfSporeSacks() {
+        return amountOfSporeSacks;
+    }
+
+    public void setAmountOfSporeSacks(int amountOfSporeSacks) {
+        this.amountOfSporeSacks = amountOfSporeSacks;
+    }
+
     @Override
+    @JsonValue
     public String toString() {
         String mode;
         String mobility;
