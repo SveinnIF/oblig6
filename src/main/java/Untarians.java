@@ -14,6 +14,9 @@ public class Untarians extends Animal{
         this.graspingAbility = graspingAbility;
     }
 
+    public Untarians() {
+    }
+
     public int getAmountOfOrifices() {
         return amountOfOrifices;
     }
@@ -50,7 +53,6 @@ public class Untarians extends Animal{
     }*/
 
     @Override
-    @JsonValue
     public String toString() {
         String mode;
         if(isCanFly()){

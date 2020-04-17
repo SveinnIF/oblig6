@@ -15,6 +15,9 @@ public class Kush extends Animal{
         this.amountOfSporeSacks = amountOfSporeSacks;
     }
 
+    public Kush() {
+    }
+
     public boolean isMobile() {
         return mobile;
     }

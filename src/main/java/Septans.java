@@ -14,6 +14,9 @@ public class Septans extends Animal{
         this.estimatedWingspan = estimatedWingspan;
     }
 
+    public Septans() {
+    }
+
     public String getExoskeletonType() {
         return exoskeletonType;
     }

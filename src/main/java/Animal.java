@@ -1,3 +1,14 @@
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+@JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        property = "type")
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = Untarians.class, name = "Untarians"),
+        @JsonSubTypes.Type(value = Kush.class, name = "Kush"),
+        @JsonSubTypes.Type(value = Septans.class, name = "Septans"),
+})
 public abstract class Animal {
     private String id,name,scienceName,colour;
     private boolean canFly,needsSubmersion;
@@ -15,6 +26,9 @@ public abstract class Animal {
         this.amountOflegs = amountOflegs;
         this.height = height;
         this.length = length;
+    }
+
+    public Animal() {
     }
 
     public String getId() {

@@ -1,0 +1,32 @@
+{
+  "untarianObservation" : {
+    "observerName" : "Svon",
+    "picture" : "pictureURL",
+    "comments" : "it was eating",
+    "timeObserved" : "24.3.2337",
+    "amountObserved" : 1,
+    "animal" : {
+      "type" : "Untarians",
+      "id" : "GOMP",
+      "name" : "damberdober",
+      "scienceName" : "snippsnoppdipperdopp",
+      "colour" : "orange with green dots",
+      "canFly" : false,
+      "needsSubmersion" : false,
+      "amountOfEyes" : 4,
+      "amountOflegs" : 3,
+      "height" : 1.5,
+      "length" : 0.5,
+      "amountOfOrifices" : 7,
+      "observedSocialInteligence" : 46,
+      "toolUse" : "can use sticks as weapons",
+      "graspingAbility" : "high"
+    },
+    "biome" : {
+      "type" : "shroomforrest",
+      "planet" : "galdadot",
+      "longitude" : 12345.543,
+      "latitude" : 123456.8765
+    }
+  }
+}
