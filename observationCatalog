@@ -1,32 +1,95 @@
 {
-  "untarianObservation" : {
-    "observerName" : "Svon",
-    "picture" : "pictureURL",
-    "comments" : "it was eating",
-    "timeObserved" : "24.3.2337",
+  "sippidipp observation" : {
+    "observerName" : "hans-henning bjÃ¸rrebill",
+    "picture" : "https://media.discordapp.net/attachments/578228794939408384/701741108748615760/unknown.png",
+    "comments" : "now thise are some scary plants",
+    "timeObserved" : "12.12.2337",
+    "amountObserved" : 5,
+    "animal" : {
+      "type" : "Kush",
+      "id" : "sippdipp",
+      "name" : "Jarrdkushner",
+      "scienceName" : "Jepdrepidus",
+      "colour" : "green with brown spots",
+      "canFly" : false,
+      "needsSubmersion" : false,
+      "amountOfEyes" : 13,
+      "amountOflegs" : 8,
+      "height" : 0.5,
+      "length" : 1.0,
+      "mobile" : true,
+      "diet" : "carnevore",
+      "walkingSpeed" : "slow",
+      "formOfAcidGland" : "external, long range gramb gland",
+      "venomType" : "necrosis inducing",
+      "amountOfSporeSacks" : 5
+    },
+    "biome" : {
+      "type" : "savanna",
+      "planet" : "woophoop",
+      "longitude" : 2456.632,
+      "latitude" : 1345.6413
+    }
+  },
+  "GRUBL observation" : {
+    "observerName" : "BÃ¦rg BjÃ¸rnar Birtleby",
+    "picture" : "https://discordapp.com/channels/@me/578228794939408384/701740078975811604",
+    "comments" : "my god what a beauty, those legs are to die for",
+    "timeObserved" : "24.11.2337",
     "amountObserved" : 1,
     "animal" : {
       "type" : "Untarians",
-      "id" : "GOMP",
-      "name" : "damberdober",
-      "scienceName" : "snippsnoppdipperdopp",
-      "colour" : "orange with green dots",
+      "id" : "GRUBL",
+      "name" : "Talie",
+      "scienceName" : "Dimdamdibbadab",
+      "colour" : "brown with brown legstripes",
       "canFly" : false,
       "needsSubmersion" : false,
-      "amountOfEyes" : 4,
+      "amountOfEyes" : 3,
       "amountOflegs" : 3,
-      "height" : 1.5,
-      "length" : 0.5,
-      "amountOfOrifices" : 7,
-      "observedSocialInteligence" : 46,
-      "toolUse" : "can use sticks as weapons",
-      "graspingAbility" : "high"
+      "height" : 5.0,
+      "length" : 1.0,
+      "amountOfOrifices" : 6,
+      "observedSocialInteligence" : 20,
+      "toolUse" : "not observed",
+      "graspingAbility" : "low"
     },
     "biome" : {
       "type" : "shroomforrest",
       "planet" : "galdadot",
-      "longitude" : 12345.543,
-      "latitude" : 123456.8765
+      "longitude" : 2345.345,
+      "latitude" : 23456.765
+    }
+  },
+  "Kampian observation" : {
+    "observerName" : "sÃ¸pple jan bergstrÃ¸m",
+    "picture" : "jeg hadde bilde av denne ogsÃ¥, var liksom en tusenben greie men da mÃ¥ jeg slÃ¥ pÃ¥ store pc'n igjen fordi jeg glemte Ã¥ sende den over og det gidder jeg ikke nÃ¥. men det var vel ikke sÃ¥ viktig i oppgaven uansett",
+    "comments" : "real cool beans these buggers are, wouldn'da lovva ben etin bya onea dam",
+    "timeObserved" : "12.65.7654",
+    "amountObserved" : 24,
+    "animal" : {
+      "type" : "Septans",
+      "id" : "Kampian",
+      "name" : "shrubcrawler",
+      "scienceName" : "shrubicuscrawlicus",
+      "colour" : "brown with lightbrown topcitin",
+      "canFly" : false,
+      "needsSubmersion" : false,
+      "amountOfEyes" : 2,
+      "amountOflegs" : 6,
+      "height" : 0.5,
+      "length" : 5.0,
+      "exoskeletonType" : "iron-chitin composit",
+      "wingType" : "none",
+      "antennaType" : "straight",
+      "wings" : false,
+      "estimatedWingspan" : 0.0
+    },
+    "biome" : {
+      "type" : "AAAAAAHAAHAHHAAA",
+      "planet" : "HHHHHAAAAAAAAAAHAHAHAA",
+      "longitude" : 0.0,
+      "latitude" : 0.0
     }
   },
   "Himian observation" : {
@@ -57,6 +120,82 @@
       "planet" : "galdadot",
       "longitude" : 2345.43,
       "latitude" : 2345.43
+    }
+  },
+  "GOMP observation" : {
+    "observerName" : "Svon",
+    "picture" : "https://media.discordapp.net/attachments/578228794939408384/701739929180569661/unknown.png?width=607&height=502",
+    "comments" : "it was eating",
+    "timeObserved" : "24.3.2337",
+    "amountObserved" : 1,
+    "animal" : {
+      "type" : "Untarians",
+      "id" : "GOMP",
+      "name" : "damberdober",
+      "scienceName" : "snippsnoppdipperdopp",
+      "colour" : "orange with green dots",
+      "canFly" : false,
+      "needsSubmersion" : false,
+      "amountOfEyes" : 4,
+      "amountOflegs" : 3,
+      "height" : 1.5,
+      "length" : 0.5,
+      "amountOfOrifices" : 7,
+      "observedSocialInteligence" : 46,
+      "toolUse" : "can use sticks as weapons",
+      "graspingAbility" : "high"
+    },
+    "biome" : {
+      "type" : "shroomforrest",
+      "planet" : "galdadot",
+      "longitude" : 12345.543,
+      "latitude" : 123456.8765
+    }
+  },
+  "Klomp observation" : {
+    "observerName" : "Gjens GjÃ¸rerett",
+    "picture" : "https://media.discordapp.net/attachments/578228794939408384/701740878720532540/unknown.png?width=450&height=502",
+    "comments" : "seem catching other swiming animals and eating them with their long mouth arms",
+    "timeObserved" : "2.2.2338",
+    "amountObserved" : 12,
+    "animal" : {
+      "type" : "Kush",
+      "id" : "Klomp",
+      "name" : "Deathvines",
+      "scienceName" : "Bitusropus",
+      "colour" : "green",
+      "canFly" : false,
+      "needsSubmersion" : true,
+      "amountOfEyes" : 0,
+      "amountOflegs" : 0,
+      "height" : 7.0,
+      "length" : 1.0,
+      "mobile" : false,
+      "diet" : "carnevore",
+      "walkingSpeed" : "none",
+      "formOfAcidGland" : "none",
+      "venomType" : "paralyzing",
+      "amountOfSporeSacks" : 100
+    },
+    "biome" : {
+      "type" : "dessert",
+      "planet" : "woophoop",
+      "longitude" : 123456.765,
+      "latitude" : 2345.7654
+    }
+  },
+  "ORGALORG" : {
+    "observerName" : "HARRY HOLE",
+    "picture" : "https://media.discordapp.net/attachments/578228794939408384/701739812297900092/unknown.png",
+    "comments" : "THEY ARE EVERYWHERE! THEY ARE EATING FRANK! MY GOD THE HUMANITY!",
+    "timeObserved" : "23.523.3425",
+    "amountObserved" : 500,
+    "animal" : null,
+    "biome" : {
+      "type" : "lush green fields",
+      "planet" : "gunnar sin planet",
+      "longitude" : 3.451345134513451E14,
+      "latitude" : 1.3421341234123423E14
     }
   }
 }

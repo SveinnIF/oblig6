@@ -62,9 +62,8 @@ public class Untarians extends Animal{
     public void setGraspingAbility(String graspingAbility) {
         this.graspingAbility = graspingAbility;
     }
-    /*    public String mostOrifices(ArrayList<Untarians> untarians){
-        return untarians.sort(Comparator.comparing(Untarians::mostOrifices));
-    }*/
+
+
 
     @Override
     public String toString() {
