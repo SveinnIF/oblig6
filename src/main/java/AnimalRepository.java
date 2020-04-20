@@ -22,6 +22,7 @@ public class AnimalRepository implements repositoryInterface {
         registerUntarians("Himian","Hoganbog","niptipslippidipp","green with green stripes",true,false,4,6,2,3,3,50,"simple","low");
         registerBiome("Ankhank","grasslands","galdadot",6436.24,2345.43);
         makeObservation("Himian observation","svon",untariansList.get("Himian"),biomeList.get("Ankhank"),"picture","13.6.2338",2,"new animal found, looks like 2 animals at first but is actually connected. no idea why. observed with a child");
+        System.out.println(Untarians.amountOfOrifices(untariansList));
         skrivTilJson(fileName, observationList);
         System.out.println(readFromFile(fileName));
     }
@@ -50,6 +51,7 @@ public class AnimalRepository implements repositoryInterface {
         //but mostly by example of the previous assignment. also got a little help from my friend Kim how pointed me in the right direction a couple of times (for example he told me i was looking at the wrong part of the tutorial when i got stuck at one point)
         //don't know how important it is to mention that my friend told me to look at the right place but im not taking any chances
     }
+
 
 
     @Override

@@ -1,4 +1,8 @@
-public class Untarians extends Animal{
+import org.jetbrains.annotations.NotNull;
+
+import java.util.*;
+
+public class Untarians extends Animal implements Comparable{
     private int amountOfOrifices,observedSocialInteligence;
     private String toolUse,graspingAbility;
 
@@ -64,6 +68,18 @@ public class Untarians extends Animal{
     }
 
 
+    public static HashMap<String,Untarians> amountOfOrifices(HashMap<String,Untarians> untariansHashMap){
+        List<Untarians> orificeNumber = new ArrayList<>(untariansHashMap.values());
+        HashMap<String,Untarians> sortedByOrifice = new HashMap<>();
+
+        Collections.sort(orificeNumber, Comparator.comparing(Untarians::getAmountOfOrifices));
+
+        for (Untarians untarians : orificeNumber) {
+            sortedByOrifice.put(untarians.getId(), untarians);
+        }
+        return sortedByOrifice;
+        //https://stackoverflow.com/questions/780541/how-to-sort-a-hashmap-in-java
+    }
 
     @Override
     public String toString() {
@@ -78,5 +94,10 @@ public class Untarians extends Animal{
         return getId() + " the " + getName() + " (" + getScienceName() + "). it is " + getColour() + " ." + mode + "it has " +  getAmountOfEyes() + " eyes and " +  getAmountOflegs() +
                 " legs. it has a height of " + getHeight() + " meter and a length of " + getLength() + " meter. it has " +
                 amountOfOrifices + " orifices. The social interligence it has is: " + observedSocialInteligence + ". Use of tools: " + toolUse + ", the subjects grasping ability is " + graspingAbility + ". ";
+    }
+
+    @Override
+    public int compareTo(@NotNull Object o) {
+        return 0;
     }
 }
