@@ -16,6 +16,25 @@ public class Kush extends Animal{
     public Kush() {
     }
 
+    public void setAllKush(String id, String name, String scienceName, String colour, boolean canFly, boolean needsSubmersion, int amountOfEyes, int amountOflegs, double height, double length, boolean mobile, String diet, String walkingSpeed, String formOfAcidGland, String venomType, int amountOfSporeSacks) {
+        setId(id);
+        setName(name);
+        setScienceName(scienceName);
+        setColour(colour);
+        setCanFly(canFly);
+        setNeedsSubmersion(needsSubmersion);
+        setAmountOfEyes(amountOfEyes);
+        setAmountOflegs(amountOflegs);
+        setHeight(height);
+        setLength(length);
+        setMobile(mobile);
+        setDiet(diet);
+        setWalkingSpeed(walkingSpeed);
+        setFormOfAcidGland(formOfAcidGland);
+        setVenomType(venomType);
+        setAmountOfSporeSacks(amountOfSporeSacks);
+    }
+
     public boolean isMobile() {
         return mobile;
     }

@@ -19,7 +19,8 @@ public class Main {
         System.out.println(observationList.get("untarianObservation"));
 
         new AnimalRepository(observationList,kushList, septansList, untariansList,  biomeList,"observationCatalog");
-    //jeg velger map for å ha dataene mine i fordi da slipper en del metoder som resultat av List. Med HashMap kan jeg bare skrive .get(nøkkelen) siden alt har en Id her uansett. det er base det beste valget synes jeg
+        //jeg velger map for å ha dataene mine i fordi da slipper en del metoder som resultat av List. Med HashMap kan jeg bare skrive .get(nøkkelen) siden alt har en Id her uansett. det er base det beste valget synes jeg
+        //i mean, HashMap was MADE for this kind of stuff
     }
 
 }

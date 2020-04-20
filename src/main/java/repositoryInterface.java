@@ -8,10 +8,10 @@ public interface repositoryInterface {
     void deleteUntarians(String id);
     void deleteSeptans(String id);
     void deleteKush(String id);
-    void makeObservation(String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
-    void updateObservation(String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
-    void deleteObservation(String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
-    void registerBiome(String type, String planet, double longitude, double latitude);
-    void updateBiome(String type, String planet, double longitude, double latitude);
-    void deleteBiome(String type, String planet, double longitude, double latitude);
+    void makeObservation(String observation,String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
+    void updateObservation(String observation,String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
+    void deleteObservation(String observation,String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
+    void registerBiome(String localName,String type, String planet, double longitude, double latitude);
+    void updateBiome(String localName,String type, String planet, double longitude, double latitude);
+    void deleteBiome(String localName,String type, String planet, double longitude, double latitude);
 }

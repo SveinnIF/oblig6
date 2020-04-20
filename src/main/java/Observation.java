@@ -17,6 +17,16 @@ public class Observation {
     public Observation() {
     }
 
+    public void setAllObs(String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments){
+        setObserverName(observerName);
+        setAnimal(animal);
+        setBiome(biome);
+        setPicture(picture);
+        setTimeObserved(timeObserved);
+        setAmountObserved(amountObserved);
+        setComments(comments);
+    }
+
     public String getObserverName() {
         return observerName;
     }

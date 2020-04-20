@@ -15,6 +15,24 @@ public class Septans extends Animal{
     public Septans() {
     }
 
+    public void setAllSep(String id, String name, String scienceName, String colour, boolean canFly, boolean needsSubmersion, int amountOfEyes, int amountOflegs, double height, double length, String exoskeletonType, String wingType, String antennaType, boolean wings, float estimatedWingspan) {
+        setId(id);
+        setName(name);
+        setScienceName(scienceName);
+        setColour(colour);
+        setCanFly(canFly);
+        setNeedsSubmersion(needsSubmersion);
+        setAmountOfEyes(amountOfEyes);
+        setAmountOflegs(amountOflegs);
+        setHeight(height);
+        setLength(length);
+        setExoskeletonType(exoskeletonType);
+        setWingType(wingType);
+        setAntennaType(antennaType);
+        setWings(wings);
+        setEstimatedWingspan(estimatedWingspan);
+    }
+
     public String getExoskeletonType() {
         return exoskeletonType;
     }

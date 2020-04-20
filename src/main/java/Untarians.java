@@ -13,6 +13,24 @@ public class Untarians extends Animal{
     public Untarians() {
     }
 
+    public void setAllunt(String id, String name, String scienceName, String colour, boolean canFly, boolean needsSubmersion, int amountOfEyes, int amountOflegs, double height, double length, int amountOfOrifices, int observedSocialInteligence, String toolUse, String graspingAbility) {
+        setId(id);
+        setName(name);
+        setScienceName(scienceName);
+        setColour(colour);
+        setCanFly(canFly);
+        setNeedsSubmersion(needsSubmersion);
+        setAmountOfEyes(amountOfEyes);
+        setAmountOflegs(amountOflegs);
+        setHeight(height);
+        setLength(length);
+        setAmountOfOrifices(amountOfOrifices);
+        setObservedSocialInteligence(observedSocialInteligence);
+        setToolUse(toolUse);
+        setGraspingAbility(graspingAbility);
+        //the set all idea i got a while ago from my friend Kim, i thought it was a brilliant idea so im doing it here too
+    }
+
     public int getAmountOfOrifices() {
         return amountOfOrifices;
     }

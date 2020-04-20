@@ -12,6 +12,13 @@ public class Biome {
     public Biome() {
     }
 
+    public void setAllBi(String type, String planet, double longitude, double latitude){
+        setType(type);
+        setPlanet(planet);
+        setLongitude(longitude);
+        setLatitude(latitude);
+    }
+
     public String getType() {
         return type;
     }

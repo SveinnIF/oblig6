@@ -31,6 +31,46 @@ public abstract class Animal {
     public Animal() {
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setScienceName(String scienceName) {
+        this.scienceName = scienceName;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public void setCanFly(boolean canFly) {
+        this.canFly = canFly;
+    }
+
+    public void setNeedsSubmersion(boolean needsSubmersion) {
+        this.needsSubmersion = needsSubmersion;
+    }
+
+    public void setAmountOfEyes(int amountOfEyes) {
+        this.amountOfEyes = amountOfEyes;
+    }
+
+    public void setAmountOflegs(int amountOflegs) {
+        this.amountOflegs = amountOflegs;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
     public String getId() {
         return id;
     }
