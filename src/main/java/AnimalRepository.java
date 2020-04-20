@@ -18,6 +18,10 @@ public class AnimalRepository implements repositoryInterface {
         this.septansList = septansList;
         this.untariansList = untariansList;
         this.biomeList = biomeList;
+
+        registerUntarians("Himian","Hoganbog","niptipslippidipp","green with green stripes",true,false,4,6,2,3,3,50,"simple","low");
+        registerBiome("Ankhank","grasslands","galdadot",6436.24,2345.43);
+        makeObservation("Himian observation","svon",untariansList.get("Himian"),biomeList.get("Ankhank"),"picture","13.6.2338",2,"new animal found, looks like 2 animals at first but is actually connected. no idea why. observed with a child");
         skrivTilJson(fileName, observationList);
         System.out.println(readFromFile(fileName));
     }

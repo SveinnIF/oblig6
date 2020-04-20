@@ -28,5 +28,35 @@
       "longitude" : 12345.543,
       "latitude" : 123456.8765
     }
+  },
+  "Himian observation" : {
+    "observerName" : "svon",
+    "picture" : "picture",
+    "comments" : "new animal found, looks like 2 animals at first but is actually connected. no idea why. observed with a child",
+    "timeObserved" : "13.6.2338",
+    "amountObserved" : 2,
+    "animal" : {
+      "type" : "Untarians",
+      "id" : "Himian",
+      "name" : "Hoganbog",
+      "scienceName" : "niptipslippidipp",
+      "colour" : "green with green stripes",
+      "canFly" : true,
+      "needsSubmersion" : false,
+      "amountOfEyes" : 4,
+      "amountOflegs" : 6,
+      "height" : 2.0,
+      "length" : 3.0,
+      "amountOfOrifices" : 3,
+      "observedSocialInteligence" : 50,
+      "toolUse" : "simple",
+      "graspingAbility" : "low"
+    },
+    "biome" : {
+      "type" : "grasslands",
+      "planet" : "galdadot",
+      "longitude" : 2345.43,
+      "latitude" : 2345.43
+    }
   }
 }
