@@ -28,7 +28,7 @@ public class AnimalRepository implements IrepositoryInterface {
     }
 
 
-    public static void skrivTilJson(String filnavn, HashMap<String, Observation> observationHashMap) {
+    public void skrivTilJson(String filnavn, HashMap<String, Observation> observationHashMap) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filnavn), observationHashMap);
@@ -37,7 +37,7 @@ public class AnimalRepository implements IrepositoryInterface {
         }
     }
 
-    public static HashMap<String, Observation> readFromFile(String filePath) {
+    public  HashMap<String, Observation> readFromFile(String filePath) {
         HashMap<String, Observation> observationList = new HashMap<>();
         try {
             ObjectMapper objectMapper = new ObjectMapper();

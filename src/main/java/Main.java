@@ -39,8 +39,6 @@ public class Main {
 
         AnimalRepository animalRepository = new AnimalRepository(observationList,kushList, septansList, untariansList,  biomeList,"observationCatalog");
         Controller controller = new Controller(animalRepository);
-        //UniverseCSVRepository planetSystemRepository = new UniverseCSVRepository("planets.csv");
-        //PlanetSystemController planetSystemController = new PlanetSystemController(planetSystemRepository);
         //jeg velger map for å ha dataene mine i fordi da slipper en del metoder som resultat av List. Med HashMap kan jeg bare skrive .get(nøkkelen) siden alt har en Id her uansett. det er base det beste valget synes jeg
 
         app.get("/api/observations", controller::getAllObservations);
