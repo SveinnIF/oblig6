@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class AnimalRepository implements repositoryInterface {
+public class AnimalRepository implements IrepositoryInterface {
     HashMap<String, Observation> observationList;
     HashMap<String, Kush> kushList;
     HashMap<String, Septans> septansList;
@@ -26,6 +26,7 @@ public class AnimalRepository implements repositoryInterface {
         skrivTilJson(fileName, observationList);
         System.out.println(readFromFile(fileName));
     }
+
 
     public static void skrivTilJson(String filnavn, HashMap<String, Observation> observationHashMap) {
         try {
@@ -53,6 +54,10 @@ public class AnimalRepository implements repositoryInterface {
     }
 
 
+    @Override
+    public HashMap<String, Observation> getObservationList() {
+        return observationList;
+    }
 
     @Override
     public void registerUntarians(String id, String name, String scienceName, String colour, boolean canFly, boolean needsSubmersion, int amountOfEyes, int amountOflegs, double height, double length, int amountOfOrifices, int observedSocialInteligence, String toolUse, String graspingAbility) {

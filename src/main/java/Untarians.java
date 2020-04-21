@@ -72,7 +72,7 @@ public class Untarians extends Animal implements Comparable{
         List<Untarians> orificeNumber = new ArrayList<>(untariansHashMap.values());
         HashMap<String,Untarians> sortedByOrifice = new HashMap<>();
 
-        Collections.sort(orificeNumber, Comparator.comparing(Untarians::getAmountOfOrifices));
+        orificeNumber.sort(Comparator.comparing(Untarians::getAmountOfOrifices));
 
         for (Untarians untarians : orificeNumber) {
             sortedByOrifice.put(untarians.getId(), untarians);

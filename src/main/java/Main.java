@@ -1,6 +1,13 @@
+import io.javalin.Javalin;
+import io.javalin.http.Context;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 public class Main {
     public static void main(String[] args){
+        Javalin app = Javalin.create().start();
+        app.config.enableWebjars();
+
 
         HashMap<String,Observation> observationList = new HashMap<>();
         HashMap<String, Kush> kushList = new HashMap<>();
@@ -27,14 +34,18 @@ public class Main {
         observationList.put("GRUBL observation", new Observation("Bærg Bjørnar Birtleby",untariansList.get("GRUBL"),biomeList.get("tralleball"),"https://discordapp.com/channels/@me/578228794939408384/701740078975811604","24.11.2337",1,"my god what a beauty, those legs are to die for"));
         observationList.put("sippidipp observation", new Observation("hans-henning bjørrebill",kushList.get("sippdipp"),biomeList.get("enFlaskeLim"),"https://media.discordapp.net/attachments/578228794939408384/701741108748615760/unknown.png","12.12.2337",5,"now thise are some scary plants"));
         observationList.put("Klomp observation", new Observation("Gjens Gjørerett",kushList.get("Klomp"),biomeList.get("blod"),"https://media.discordapp.net/attachments/578228794939408384/701740878720532540/unknown.png?width=450&height=502","2.2.2338",12,"seem catching other swiming animals and eating them with their long mouth arms"));
-        observationList.put("ORGALORG",new Observation("HARRY HOLE",kushList.get("ORGALORG"),biomeList.get("hemsedal"),"https://media.discordapp.net/attachments/578228794939408384/701739812297900092/unknown.png","23.523.3425",500,"THEY ARE EVERYWHERE! THEY ARE EATING FRANK! MY GOD THE HUMANITY!"));
+        observationList.put("ORGALORG",new Observation("HARRY HOLE",septansList.get("ORGALORG"),biomeList.get("hemsedal"),"https://media.discordapp.net/attachments/578228794939408384/701739812297900092/unknown.png","23.523.3425",500,"THEY ARE EVERYWHERE! THEY ARE EATING FRANK! MY GOD THE HUMANITY!"));
         observationList.put("Kampian observation", new Observation("søpple jan bergstrøm",septansList.get("Kampian"),biomeList.get("HAHAHAHAHA"),"jeg hadde bilde av denne også, var liksom en tusenben greie men da må jeg slå på store pc'n igjen fordi jeg glemte å sende den over og det gidder jeg ikke nå. men det var vel ikke så viktig i oppgaven uansett","12.65.7654",24,"real cool beans these buggers are, wouldn'da lovva ben etin bya onea dam"));
 
-        new AnimalRepository(observationList,kushList, septansList, untariansList,  biomeList,"observationCatalog");
+        AnimalRepository animalRepository = new AnimalRepository(observationList,kushList, septansList, untariansList,  biomeList,"observationCatalog");
+        Controller controller = new Controller(animalRepository);
+        //UniverseCSVRepository planetSystemRepository = new UniverseCSVRepository("planets.csv");
+        //PlanetSystemController planetSystemController = new PlanetSystemController(planetSystemRepository);
         //jeg velger map for å ha dataene mine i fordi da slipper en del metoder som resultat av List. Med HashMap kan jeg bare skrive .get(nøkkelen) siden alt har en Id her uansett. det er base det beste valget synes jeg
-        //i mean, HashMap was MADE for this kind of stuff
 
-
+        app.get("/api/observations", controller::getAllObservations);
     }
+
+
 
 }
