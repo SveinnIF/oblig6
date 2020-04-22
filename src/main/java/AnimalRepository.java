@@ -21,7 +21,7 @@ public class AnimalRepository implements IrepositoryInterface {
 
         registerUntarians("Himian","Hoganbog","niptipslippidipp","green with green stripes",true,false,4,6,2,3,3,50,"simple","low");
         registerBiome("Ankhank","grasslands","galdadot",6436.24,2345.43);
-        makeObservation("Himian observation","svon",untariansList.get("Himian"),biomeList.get("Ankhank"),"picture","13.6.2338",2,"new animal found, looks like 2 animals at first but is actually connected. no idea why. observed with a child");
+        makeObservation("Himian observation","Karl Kevin Kubheim",untariansList.get("Himian"),biomeList.get("Ankhank"),"picture","13.6.2338",2,"new animal found, looks like 2 animals at first but is actually connected. no idea why. observed with a child");
         System.out.println(Untarians.amountOfOrifices(untariansList));
         skrivTilJson(fileName, observationList);
         System.out.println(readFromFile(fileName));
@@ -106,18 +106,18 @@ public class AnimalRepository implements IrepositoryInterface {
     }
 
     @Override
-    public void makeObservation(String observation,String observerName, Animal animal, Biome biome, String picture, String timeObserved, int amountObserved, String comments) {
-        observationList.put(observation, new Observation(observerName, animal,  biome,  picture,  timeObserved,  amountObserved,  comments));
+    public void makeObservation(String name,String observerName, Animal animal, Biome biome, String picture, String timeObserved, int amountObserved, String comments) {
+        observationList.put(name, new Observation(name,observerName, animal,  biome,  picture,  timeObserved,  amountObserved,  comments));
     }
 
     @Override
-    public void updateObservation(String observation,String observerName, Animal animal, Biome biome, String picture, String timeObserved, int amountObserved, String comments) {
-        observationList.get(observation).setAllObs(observerName, animal,  biome,  picture,  timeObserved,  amountObserved,  comments);
+    public void updateObservation(String name,String observerName, Animal animal, Biome biome, String picture, String timeObserved, int amountObserved, String comments) {
+        observationList.get(name).setAllObs(name,observerName, animal,  biome,  picture,  timeObserved,  amountObserved,  comments);
     }
 
     @Override
-    public void deleteObservation(String observation,String observerName, Animal animal, Biome biome, String picture, String timeObserved, int amountObserved, String comments) {
-        observationList.remove(observation);
+    public void deleteObservation(String name) {
+        observationList.remove(name);
     }
 
     @Override
@@ -131,7 +131,7 @@ public class AnimalRepository implements IrepositoryInterface {
     }
 
     @Override
-    public void deleteBiome(String localName,String type, String planet, double longitude, double latitude) {
+    public void deleteBiome(String localName) {
         biomeList.remove(localName);
     }
 }

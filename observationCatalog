@@ -1,9 +1,10 @@
 {
   "sippidipp observation" : {
-    "observerName" : "hans-henning bjÃ¸rrebill",
+    "observerName" : "Hans-Henning Bjorrebill",
     "picture" : "https://media.discordapp.net/attachments/578228794939408384/701741108748615760/unknown.png",
     "comments" : "now thise are some scary plants",
     "timeObserved" : "12.12.2337",
+    "name" : "Sippidipp observation",
     "amountObserved" : 5,
     "animal" : {
       "type" : "Kush",
@@ -32,10 +33,11 @@
     }
   },
   "GRUBL observation" : {
-    "observerName" : "BÃ¦rg BjÃ¸rnar Birtleby",
+    "observerName" : "Barg Bjornar Birtleby",
     "picture" : "https://discordapp.com/channels/@me/578228794939408384/701740078975811604",
     "comments" : "my god what a beauty, those legs are to die for",
     "timeObserved" : "24.11.2337",
+    "name" : "GRUBL observation",
     "amountObserved" : 1,
     "animal" : {
       "type" : "Untarians",
@@ -62,10 +64,11 @@
     }
   },
   "Kampian observation" : {
-    "observerName" : "sÃ¸pple jan bergstrÃ¸m",
+    "observerName" : "Sopple Jan Bergstrom",
     "picture" : "jeg hadde bilde av denne ogsÃ¥, var liksom en tusenben greie men da mÃ¥ jeg slÃ¥ pÃ¥ store pc'n igjen fordi jeg glemte Ã¥ sende den over og det gidder jeg ikke nÃ¥. men det var vel ikke sÃ¥ viktig i oppgaven uansett",
     "comments" : "real cool beans these buggers are, wouldn'da lovva ben etin bya onea dam",
     "timeObserved" : "12.65.7654",
+    "name" : "Kampian observation",
     "amountObserved" : 24,
     "animal" : {
       "type" : "Septans",
@@ -93,10 +96,11 @@
     }
   },
   "Himian observation" : {
-    "observerName" : "svon",
+    "observerName" : "Karl Kevin Kubheim",
     "picture" : "picture",
     "comments" : "new animal found, looks like 2 animals at first but is actually connected. no idea why. observed with a child",
     "timeObserved" : "13.6.2338",
+    "name" : "Himian observation",
     "amountObserved" : 2,
     "animal" : {
       "type" : "Untarians",
@@ -127,6 +131,7 @@
     "picture" : "https://media.discordapp.net/attachments/578228794939408384/701739929180569661/unknown.png?width=607&height=502",
     "comments" : "it was eating",
     "timeObserved" : "24.3.2337",
+    "name" : "GOMP observation",
     "amountObserved" : 1,
     "animal" : {
       "type" : "Untarians",
@@ -153,10 +158,11 @@
     }
   },
   "Klomp observation" : {
-    "observerName" : "Gjens GjÃ¸rerett",
+    "observerName" : "Gjens Gjorerett",
     "picture" : "https://media.discordapp.net/attachments/578228794939408384/701740878720532540/unknown.png?width=450&height=502",
     "comments" : "seem catching other swiming animals and eating them with their long mouth arms",
     "timeObserved" : "2.2.2338",
+    "name" : "Klomp observation",
     "amountObserved" : 12,
     "animal" : {
       "type" : "Kush",
@@ -185,10 +191,11 @@
     }
   },
   "ORGALORG" : {
-    "observerName" : "HARRY HOLE",
+    "observerName" : "Harry Hole",
     "picture" : "https://media.discordapp.net/attachments/578228794939408384/701739812297900092/unknown.png",
     "comments" : "THEY ARE EVERYWHERE! THEY ARE EATING FRANK! MY GOD THE HUMANITY!",
     "timeObserved" : "23.523.3425",
+    "name" : "ORGALORG",
     "amountObserved" : 500,
     "animal" : {
       "type" : "Septans",

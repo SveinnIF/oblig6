@@ -5,7 +5,7 @@
             <li v-for="observation in observations">
                 <a :href="`/observations/${observation.name.trim()}`" class="link-to-observation-details">
                     <div class="single-observation-container" >
-                        <h1>{{observation.id}} - {{observation.name}}</h1>
+                        <h1>{{observation.name}} - {{observation.observerName}}</h1>
                         <h1>{{observation.animal.name}}</h1>
                     </div>
                 </a>

@@ -11,10 +11,10 @@ public interface IrepositoryInterface {
     void deleteUntarians(String id);
     void deleteSeptans(String id);
     void deleteKush(String id);
-    void makeObservation(String observation,String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
-    void updateObservation(String observation,String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
-    void deleteObservation(String observation,String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
+    void makeObservation(String name,String observerName, Animal animal, Biome biome, String picture, String timeObserved, int amountObserved, String comments);
+    void updateObservation(String name,String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments);
+    void deleteObservation(String name);
     void registerBiome(String localName,String type, String planet, double longitude, double latitude);
     void updateBiome(String localName,String type, String planet, double longitude, double latitude);
-    void deleteBiome(String localName,String type, String planet, double longitude, double latitude);
+    void deleteBiome(String localName);
 }

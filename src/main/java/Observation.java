@@ -1,10 +1,10 @@
 public class Observation {
-    private String observerName,picture,comments,timeObserved;
+    private String observerName,picture,comments,timeObserved,name;
     private int amountObserved;
     private Animal animal;
     private Biome biome;
 
-    public Observation(String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments) {
+    public Observation(String name,String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments) {
         this.observerName = observerName;
         this.picture = picture;
         this.comments = comments;
@@ -12,12 +12,13 @@ public class Observation {
         this.amountObserved = amountObserved;
         this.animal = animal;
         this.biome = biome;
+        this.name = name;
     }
 
     public Observation() {
     }
 
-    public void setAllObs(String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments){
+    public void setAllObs(String name,String observerName, Animal animal,Biome biome, String picture, String timeObserved, int amountObserved,  String comments){
         setObserverName(observerName);
         setAnimal(animal);
         setBiome(biome);
@@ -25,6 +26,15 @@ public class Observation {
         setTimeObserved(timeObserved);
         setAmountObserved(amountObserved);
         setComments(comments);
+        setName(name);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getObserverName() {
